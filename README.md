@@ -57,7 +57,7 @@ via save it directly to the output file.
 
 ## Authors
 
-Gia Nguyen, Mohummad Bhatti, Javaria Khan, Johnny Smith
+Gia Nguyen, Mohummad Bhatti, Javaria Khan, Johnny McSwiney
 
 ## Version History
 
