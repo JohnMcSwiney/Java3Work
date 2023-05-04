@@ -1,0 +1,60 @@
+GNOME SORT
+
+
+The sort we chose to implement as our sixth sorting algorithm was the gnome sort. The key 
+unique feature is that gnome sort uses a while loop instead of the nested loops used in other algorithms
+such as bubble or insertion.
+
+
+STEPS
+
+1. The gnome sort has two parameters of the array and the compare type. The array is what will 
+be sorted, and the compare type will be used to determine what the sort will be based on. 
+
+2. Declare and initialize a variable of i to represent the index.
+
+3. Declare and initialize a variable of n to hold the length of the array. 
+
+4. There will be an if and if else statement which will be used to determine compare type. IF it is height 
+then it will use compareTo(). ELSE IF the compare type is base area or volume it will use compare().
+
+5. After determining the compare type, the sorting will begin.
+
+6. The sorting loop will run WHILE the index is less than the array length. 
+
+7. IF the index is equal to zero, the index will increment by one. This is because gnome sort 
+is done by comparing two values that are right next to each other. The index needs to be increased 
+by one, because with an index[0], there would be nothing before to compare to.
+
+8. Then the shape at index -1 will be compared to the shape at the current index value. 
+
+9. IF the shape at index-1 height value is greater than the shape at the current index, the
+index will increment by 1, to compare the next 2 values
+
+10. ELSE the current index's height value is greater than the height value for the shape's height
+at the index -1.
+
+11. A temporary variable is created to hold the object from the current index
+
+12. Then the current index will hold the value of the index-1
+
+13. The index-1 will now hold the value held in the temporary variable(the current index's 
+previous value)
+
+14. The index value will then decrement once again and compare the next two values to ensure 
+they are the correct sorting order.
+
+15. The WHILE loop will repeat until the values are the correct sorting order(in this case, descending) 
+and the index is less than the array length. 
+
+
+Complexity Analysis
+O(n^2)
+
+The worst case scenario is O(n^2). Since there is only 1 loop, the worst case 
+and average case will be the same. This algorithm has a time complexity of O(n^2) not because it contains
+a loop, but because of the fact that the index variable does not always increase. Sometimes, the index
+will need to decrease as well because when the values are not in the correct order, the index will need
+to go down until the values are the correct order. 
+
+
